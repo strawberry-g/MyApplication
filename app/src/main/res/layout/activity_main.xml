@@ -1,21 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity"
-        android:padding="5dp">
+        android:padding="5dp"
+        android:orientation="vertical">
 
-    <Button
-            android:id="@+id/btn_lv"
+    <LinearLayout
+            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="ListView"
-            android:textSize="20sp"
-            android:textAllCaps="false"
-            android:layout_marginTop="5dp">
-    </Button>
+            android:orientation="vertical">
+        <Button
+                android:id="@+id/btn_lv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ListView"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                android:layout_marginTop="5dp">
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <RadioGroup
+                android:id="@+id/rg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <RadioButton
+                    android:id="@+id/first"
+                    android:text="首页"
+                    style="@style/MyRadioButton"
+                    android:drawableTop="@drawable/btn_shouye_selector">
+            </RadioButton>
+
+            <RadioButton
+                    android:id="@+id/second"
+                    android:text="商城"
+                    style="@style/MyRadioButton"
+                    android:drawableTop="@drawable/btn_sc_selector">
+            </RadioButton>
+
+            <RadioButton
+                    android:id="@+id/third"
+                    android:text="购物车"
+                    style="@style/MyRadioButton"
+                    android:drawableTop="@drawable/btn_gwc_selector">
+            </RadioButton>
+
+            <RadioButton
+                    android:id="@+id/forth"
+                    android:text="我的"
+                    style="@style/MyRadioButton"
+                    android:drawableTop="@drawable/btn_self_selector">
+            </RadioButton>
+
+        </RadioGroup>
+
+    </LinearLayout>
 
 </LinearLayout>

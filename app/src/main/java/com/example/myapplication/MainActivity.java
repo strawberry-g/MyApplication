@@ -22,7 +22,6 @@ public class MainActivity extends AppCompatActivity {
     private void setOnClickListener(){
         OnClick onClick = new OnClick();
         lv.setOnClickListener(onClick);
-
     }
 
     private class OnClick implements View.OnClickListener {

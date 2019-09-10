@@ -13,6 +13,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
     </Button>
+
     <Button
             android:id="@+id/rl_top"
             android:text="中上"
@@ -22,6 +23,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
     </Button>
+
     <Button
             android:id="@+id/rl_left_top"
             android:text="左上"
@@ -31,6 +33,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
     </Button>
+
     <Button
             android:id="@+id/rl_bottom"
             android:text="中下"
@@ -40,6 +43,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
     </Button>
+
     <Button
             android:id="@+id/rl_left"
             android:text="中左"
@@ -49,6 +53,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
     </Button>
+
     <Button
             android:id="@+id/rl_right"
             android:text="中右"
@@ -58,6 +63,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
     </Button>
+
     <Button
             android:id="@+id/rl_right_bottom"
             android:text="右下"
@@ -67,4 +73,5 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
     </Button>
+
 </RelativeLayout>
