@@ -5,9 +5,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 
 public class MainActivity extends AppCompatActivity {
     private Button lv;
+    private RadioButton rd;
+    private RadioGroup rg;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +21,36 @@ public class MainActivity extends AppCompatActivity {
 
         lv = findViewById(R.id.btn_lv);
         setOnClickListener();
+
+        rd = findViewById(R.id.first);
+        rd.setChecked(true);
+
+        rg = findViewById(R.id.rg);
+        /*rg.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                final RadioButton radioButton = radioGroup.findViewById(i);
+                radioButton.setFocusableInTouchMode(true);
+                radioButton.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+                    @Override
+                    public void onFocusChange(View view, boolean b) {
+                        if (b){
+                            radioButton.setTextColor(getResources().getColor(R.color.colorIcon));
+                        }
+                        else{
+                            radioButton.setTextColor(getResources().getColor(R.color.colorGrey));
+                        }
+                    }
+                });
+
+                radioButton.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        radioButton.setFocusable(false);
+                    }
+                });
+            }
+        });*/
     }
 
     private void setOnClickListener(){
