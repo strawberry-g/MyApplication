@@ -6,10 +6,17 @@
         android:orientation="vertical">
 
     <!--从后台把数据查询并且交给前端显示-->
-    <ListView
-            android:id="@+id/lv"
+    <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-    </ListView>
+
+        <ListView
+                android:id="@+id/lv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+        </ListView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
 
 </LinearLayout>

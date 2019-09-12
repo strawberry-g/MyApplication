@@ -11,7 +11,6 @@ import android.widget.RadioGroup;
 public class MainActivity extends AppCompatActivity {
     private Button lv;
     private RadioButton rd;
-    private RadioGroup rg;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         rd = findViewById(R.id.first);
         rd.setChecked(true);
 
-        rg = findViewById(R.id.rg);
+        //rg = findViewById(R.id.rg);
         /*rg.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {

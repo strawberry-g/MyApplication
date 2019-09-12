@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -6,6 +6,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
+import com.example.myapplication.R;
+import com.example.myapplication.User;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -48,10 +50,10 @@ public class TestAdapter extends BaseAdapter {
             view1 = LayoutInflater.from(context).inflate(R.layout.layout_lv_item,null);
         }
 
-        TextView tv1 = view1.findViewById(R.id.lv_tv1);
+        //TextView tv1 = view1.findViewById(R.id.lv_tv1);
         TextView tv2 = view1.findViewById(R.id.lv_tv2);
         TextView tv3 = view1.findViewById(R.id.lv_tv3);
-        tv1.setText(user.getTitle());
+        //tv1.setText(user.getTitle());
         tv2.setText(user.getName());
         tv3.setText(user.getDate());
 

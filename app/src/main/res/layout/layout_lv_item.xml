@@ -8,16 +8,27 @@
     <TextView
             android:id="@+id/lv_tv1"
             android:text="@string/lv_text"
-            android:textSize="25sp"
+            android:textSize="28sp"
             android:paddingLeft="5dp"
             android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
     </TextView>
 
+    <!--<ImageView
+            android:id="@+id/lv_iv"
+            android:src="@drawable/vae"
+            android:scaleType="centerCrop"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp">
+    </ImageView>-->
+
     <TextView
             android:id="@+id/lv_tv2"
             android:text = "VAE"
+            android:textSize="18sp"
             android:layout_alignParentRight="true"
             android:paddingRight="5dp"
             android:layout_marginTop="5dp"
@@ -28,6 +39,7 @@
     <TextView
             android:id="@+id/lv_tv3"
             android:text = "2016-06-27"
+            android:textSize="18sp"
             android:layout_alignParentRight="true"
             android:paddingRight="5dp"
             android:layout_marginTop="5dp"

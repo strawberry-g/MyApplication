@@ -42,9 +42,9 @@
 
             <RadioButton
                     android:id="@+id/second"
-                    android:text="商城"
                     style="@style/MyRadioButton"
-                    android:drawableTop="@drawable/btn_sc_selector">
+                    android:drawableTop="@drawable/btn_sc_selector"
+                    android:text="商城">
             </RadioButton>
 
             <RadioButton
